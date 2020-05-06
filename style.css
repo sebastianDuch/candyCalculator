@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Oswald", sans-serif;
   color: white;
+  box-sizing: border-box;
 }
 
 .container {
@@ -12,18 +13,25 @@
 }
 
 .title {
-  width: 90vw;
+  width: 90%;
+  height: 10vh;
   margin: 0 auto;
-  padding: 16px 0 16px;
   border-bottom: 5px solid hotpink;
 }
-
 .title__content {
   text-align: center;
   color: hotpink;
-  font-size: 38px;
+  font-size: 42px;
+  line-height: 10vh;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+}
+
+.workspace {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  height: 85vh;
 }
 
 .button__count {
@@ -31,7 +39,7 @@
   width: 150px;
   height: 36px;
   bottom: 50px;
-  right: 50px;
+  right: 75px;
   text-transform: uppercase;
   font-size: 24px;
   background-color: hotpink;
@@ -44,4 +52,15 @@
 .button__count:hover {
   cursor: pointer;
   background-color: rgb(192, 20, 106);
+}
+
+.footer {
+  width: 90%;
+  height: 5vh;
+  line-height: 5vh;
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: center;
+  border-top: 1px solid hotpink;
+  color: hotpink;
 }
