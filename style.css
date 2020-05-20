@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* color: white; */
+  outline: none;
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
 }
@@ -91,7 +91,7 @@
   background-color: green;
 }
 
-ul {
+.list {
   display: inline-block;
   margin: 100px 30%;
   width: 40%;
@@ -105,27 +105,27 @@ ul {
   transition: 0.25s;
 }
 
-li {
+.list__element {
   display: none;
   transition: 0.25s;
 }
 
-ul:hover {
+.list:hover {
   cursor: pointer;
   color: hotpink;
 }
 
-ul:hover li {
+.list:hover .list__element {
   display: block;
   border-top: 1px dashed rgb(192, 20, 106);
 }
 
-ul:hover li:first-child {
+.list:hover li:first-child {
   display: block;
   border-top: 2px solid hotpink;
 }
 
-li:hover {
+.list__element:hover {
   background-color: rgb(192, 20, 106);
 }
 
