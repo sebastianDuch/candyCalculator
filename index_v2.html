@@ -16,24 +16,26 @@
     <header class="title">
       <h1 class="title__content">Kalkulator Natusi</h1>
       <nav class="navigation">
-        <a href="index.html" class="navigation__option navigation__option--open" >v.1</a>
-        <a href="index_v2.html" class="navigation__option">v.2</a>
+        <a href="index.html" class="navigation__option">v.1</a>
+        <a href="index_v2.html" class="navigation__option navigation__option--open">v.2</a>
       </nav>
     </header>
 
+
     <section class="workspace">
-      <ol>
-        <ul>
-          Wybierz foremkę
-          <li>Kopułka duża</li>
-          <li>Kopułka średnia</li>
-          <li>Kopułka mała</li>
-          <li>Serce</li>
-          <li>Samochodzik</li>
-          <li>Kwiatki</li>
-          <li>Wpisz ręcznie</li>
-        </ul>
-      </ol>
+      <form class="form" action="">
+        <label class="form__label" for="form__select">Wybierz foremkę: </label>
+        <select class="form__select" name="forms" id="form__select">
+          <option value="">--Rodzaj foremki--</option>
+          <option value="round__big">Kopułka duża</option>
+          <option value="round__medium">Kopułka średnia</option>
+          <option value="round__small">Kopułka mała</option>
+          <option value="heart">Serce</option>
+          <option value="car">Samochodzik</option>
+          <option value="flowers">Kwiatki</option>
+          <option value="user__form">Wpisz ręcznie</option>
+        </select>
+      </form>
       <button class="button__add--recipe">
         <i class="fas fa-plus"></i>
         <span class="button__add--recipe--content">Dodaj przepis</span>
